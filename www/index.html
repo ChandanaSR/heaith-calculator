@@ -1,0 +1,79 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 200px;
+  background-color: whitesmoke;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  margin: 20px;
+    margin-left: -90px;
+  position: absolute;
+}
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
+}
+    button
+        {
+            margin-left: 50px;
+            font-family: sans-serif;
+            color:black;
+            background: none;
+            font-family: monospace;
+            font-size: 20px;
+            align-content: stretch;
+            animation-fill-mode: backwards;
+            border-style: none;
+        }
+        h1
+        
+        {
+            background-color:black;
+            color:white;
+        }
+    
+    </style>
+    </head>
+    <body style="text-align:center;background-image: url(img/b.jpg);background-repeat: no-repeat;background-size: cover">
+        <center><h1>HEALTH CALCULATOR</h1></center>
+        <div class="popup" onclick="myFunction()"><pre>                       <button>!</button></pre>
+       <center><span class="popuptext" id="myPopup">ABOUT<br>Health calculator is presented for your own personal use 
+and is to be used as a guide only.Medical and other decisions should not be based o
+n the results of this calculator.Although this calculator has been tested,we cannot guarantee the
+ accuracy of its calculations or results<a href=><p>ok</p></a></span>
+    
+            </center> </div>
+
+        <br><br><br><br><br>
+ <center>   <a href="bmi.html"><button id="1">BMI calculator</button></a><br><br><br>
+        <a href="hr.html"><button> Heart rate calculator</button></a><br><br><br>
+        <a href="ideal%20weight.html"><button>Ideal weight calculator</button></a><br><br><br>
+        <a href="water.html"><button>water intake calculator</button></a><br><br>
+        
+     <script>
+// When the user clicks on div, open the popup
+function myFunction() {
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");   
+}
+</script>
+</center>
+</body>
+</html>
